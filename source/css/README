@@ -1,0 +1,11 @@
+Folder for compiled styles.
+
+--
+
+File structure:
+
+css/
+| - style.css
+sass/
+| - style.scss
+| - [other *.scss files]

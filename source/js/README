@@ -1,0 +1,9 @@
+Folder for scripts.
+
+--
+
+File structure:
+
+js/
+| - app.js
+| - [other *.js files]

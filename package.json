@@ -1,0 +1,17 @@
+{
+  "name": "cat-energy",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1Sayd/Cat-Energy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1Sayd/Cat-Energy/issues"
+  },
+  "homepage": "https://github.com/1Sayd/Cat-Energy#readme"
+}

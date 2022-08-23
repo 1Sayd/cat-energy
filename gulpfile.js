@@ -23,10 +23,6 @@ import del from 'del';
 
 import browser from 'browser-sync';
 
-// mb is old version
-// import sync from 'browser-sync';
-
-
 // Styles
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })

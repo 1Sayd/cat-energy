@@ -1,6 +1,18 @@
-@use "./global/normilize.scss";
-@use "./global/soft-reset.scss";
-@use "./global/font.scss";
-@use "./global/variable.scss";
-@use "./global/utility.scss";
-@use "./blocks/page.scss";
+// global
+
+@import "./global/normilize.scss";
+@import "./global/soft-reset.scss";
+@import "./global/font.scss";
+@import "./global/variables.scss";
+@import "./global/utility.scss";
+
+// index
+
+@import "./blocks/page.scss";
+
+
+// catalog
+
+
+
+// form

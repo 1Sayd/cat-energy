@@ -7,6 +7,9 @@
 
 .page__body {
   min-height: 100%;
-  background-color: #FFFFFF;
-  color: #444444;
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  background-color: white;
+  color: $special_dark-grey;
+  margin: 0 auto;
 }

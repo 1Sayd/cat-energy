@@ -1,6 +1,6 @@
-@use "./normilize.scss";
-@use "./soft-reset.scss";
-@use "./font.scss";
-@use "./variable.scss";
-@use "./global.scss";
+@use "./global/normilize.scss";
+@use "./global/soft-reset.scss";
+@use "./global/font.scss";
+@use "./global/variable.scss";
+@use "./global/utility.scss";
 @use "./blocks/page.scss";

@@ -1,14 +1,17 @@
 // global
 
+@import "./global/font.scss";
 @import "./global/normilize.scss";
 @import "./global/soft-reset.scss";
-@import "./global/font.scss";
 @import "./global/variables.scss";
 @import "./global/utility.scss";
 
 // index
 
 @import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/logo-mobile.scss";
+@import "./blocks/main-nav.scss";
 
 
 // catalog

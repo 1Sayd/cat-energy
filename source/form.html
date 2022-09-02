@@ -10,29 +10,28 @@
 <body class="page__body">
   <h1 class="visually-hidden">Подбор программы правильного питания для котиков</h1>
   <header class="page-header">
-    <a class="page-header__logo--dog" href="index.html">
-      <img src="images/svg/logo-mobile-1.svg" alt="Logo dog" width="34" height="38">
-    </a>
-    <a class="page-header__logo--text logo-text" href="index.html">
-      <img src="images/svg/logo-mobile-2.svg" alt="Logo text" width="101" height="18">
-    </a>
-    <nav class="main-nav">
+    <div class="page-header__top">
+      <a class="page-header__logo" href="index.html">
+        <img src="images/svg/logo-mobile-1.svg" alt="Logo dog" width="34" height="38">  
+      </a>
+      <img class="page-header__logo-mobile" src="images/svg/logo-mobile-2.svg" alt="Logo text" 
+        width="101" height="18">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__items">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__items">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__items">
-            <a>Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a>Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="page-main">

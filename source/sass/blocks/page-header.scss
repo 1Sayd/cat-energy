@@ -1,3 +1,32 @@
 .page-header {
-  
+  // outline: red solid 2px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 12px 23px 0px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 30px 64px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 40px 111px 40px;
+  }
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__toggle {
+  width: 18px;
+  height: 18px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

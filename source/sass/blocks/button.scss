@@ -6,4 +6,12 @@
   text-align: center;
   text-transform: uppercase;
   border: 0px;
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active p {
+    opacity: 0.3;
+  }
 }

@@ -1,13 +1,8 @@
-.page-header {
-  // outline: red solid 2px;
-
-  display: flex;
-  flex-direction: column;
-  padding: 12px 23px 0px 20px;
+.page-header__wrapper {
 
   @media (min-width: $tablet-width) {
     padding: 24px 30px 64px 30px;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -21,11 +16,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 12px 23px 0px 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    padding: 0px;
+  }
 }
 
 .page-header__toggle {
   width: 18px;
   height: 18px;
+  
   @media (min-width: $tablet-width) {
     display: none;
   }

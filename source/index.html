@@ -8,40 +8,44 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <h1 class="visually-hidden">Магазин правильного питания для котиков</h1>
   <header class="page-header">
-    <div class="page-header__top">
-      <a class="page-header__logo" href="index.html">
-        <img src="images/svg/logo-mobile-1.svg" alt="Logo dog" width="34" height="38">  
-      </a>
-      <img class="page-header__logo-mobile" src="images/svg/logo-mobile-2.svg" alt="Logo text" 
-        width="101" height="18">
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <div class="page-header__wrapper">
+      <div class="page-header__top">
+        <a class="page-header__logo" href="index.html">
+          <img src="images/svg/logo-mobile-1.svg" alt="Logo dog" width="34" height="38">  
+        </a>
+        <img class="page-header__logo-mobile" src="images/svg/logo-mobile-2.svg" alt="Logo text" 
+          width="101" height="18">
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active">
-          <a>Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main class="page-main">
     <section class="promo">
-      <h2 class="promo__title main-title">Функциональное питание для котов</h2>
-      <p class="promo__text">Занялся собой? Займись котом!</p>
-      <img src="images/index-can-mobile.png" alt="Стакан корма с курицей" width="280" height="270">
-      <button class="promo__button button">
-        <p class="button__text">подобрать программу</p>
-      </button>
+      <div class="promo__wrapper">
+        <h1 class="promo__title main-title">Функциональное питание для котов</h1>
+        <p class="promo__text">Занялся собой? Займись котом!</p>
+        <img class="promo__image" src="images/index-can-mobile.png" alt="Стакан корма с курицей" 
+        width="280" height="270">
+        <button class="promo__button button">
+          <p class="button__text">подобрать программу</p>
+        </button>
+      </div>
     </section>
     <section class="our-catalogs">
       <h2 class="visually-hidden">Преимущества</h2>

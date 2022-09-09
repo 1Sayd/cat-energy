@@ -44,10 +44,26 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-  }
 
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__list--index a {
   @media (min-width: $desktop-width) {
     color: white;
+  }
+}
+
+.main-nav__list--index .main-nav__item--active {
+  @media (min-width: $desktop-width) {
+    border-color: white;
   }
 }
 
@@ -59,6 +75,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0px;
+    padding-bottom: 12px;
     border: 0px;
+
+    &--active {
+      border-bottom: 2px solid $basic_green;
+    }
   }
 }

@@ -66,8 +66,11 @@
 }
 
 .promo__text {
+  font-size: 14px;
+  line-height: 14px;
   text-align: center;
-  margin-bottom: 29px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

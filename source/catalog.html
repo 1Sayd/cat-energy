@@ -16,11 +16,11 @@
         </a>
         <img class="page-header__logo-mobile" src="images/svg/logo-mobile-2.svg" alt="Logo text" 
           width="101" height="18">
-        <button class="page-header__toggle" type="button">
+        <button class="page-header__toggle page-header__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">Главная</a>
@@ -267,5 +267,25 @@
       </div>
     </div>
   </footer>
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.page-header__toggle');
+    
+    navToggle.addEventListener("click", toggleBehavior)
+
+    function toggleBehavior() {
+      if (navMain.classList.contains('main-nav--closed') 
+      && navToggle.classList.contains('page-header__toggle--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navToggle.classList.remove('page-header__toggle--closed');
+        navToggle.classList.add('page-header__toggle--open');
+      }
+      else {
+        navMain.classList.add('main-nav--closed');
+        navToggle.classList.add('page-header__toggle--closed');
+        navToggle.classList.remove('page-header__toggle--open');
+      }
+    }
+  </script>
 </body>
 </html>

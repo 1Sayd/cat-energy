@@ -13,10 +13,11 @@
 }
 
 .page-header__top {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 23px 0px 20px;
+  padding: 12px 23px 15px 20px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -25,10 +26,46 @@
 }
 
 .page-header__toggle {
-  width: 18px;
+  width: 24px;
   height: 18px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
   
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &--closed::before {
+    content: '';
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    width: 24px;
+    height: 1.5px;
+    background-color: black;
+    box-shadow: 
+      0 8px 0 0 black, 
+      0 16px 0 0 black;
+  }
+
+  &--open::before,
+  &--open::after {
+    content: '';
+    position: absolute;
+    top: 31px;
+    right: 20px;
+    width: 24px;
+    height: 1.5px;
+    background-color: black;
+  }
+
+  &--open::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &--open::after {
+    transform: rotate(-45deg);
   }
 }

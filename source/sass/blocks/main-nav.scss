@@ -1,10 +1,4 @@
 .main-nav {
-  padding-top: 22px;
-  
-  @media (min-width: $tablet-width) {
-    padding-top: 0px;
-  }
-
   &--closed {
     display: none;
   
@@ -40,18 +34,18 @@
   line-height: 20px;
   text-transform: uppercase;
 
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-
-    &[href]:hover {
-      opacity: 0.6;
-    }
-
-    &[href]:active {
-      opacity: 0.3;
-    }
   }
 }
 

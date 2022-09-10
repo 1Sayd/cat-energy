@@ -25,6 +25,12 @@
   }
 }
 
+.page-header__logo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .page-header__toggle {
   width: 24px;
   height: 18px;

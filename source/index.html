@@ -11,8 +11,12 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__top">
-        <a class="page-header__logo" href="index.html">
-          <img src="images/svg/logo-mobile-1.svg" alt="Logo dog" width="34" height="38">  
+        <a>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="images/svg/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg">
+            <img class="logo" src="images/svg/logo-mobile-1.svg" alt="Logo dog" width="34" height="38">
+          </picture>
         </a>
         <img class="page-header__logo-mobile" src="images/svg/logo-mobile-2.svg" alt="Logo text" 
           width="101" height="18">

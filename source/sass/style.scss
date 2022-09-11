@@ -1,2 +1,24 @@
-@use "./font.scss";
-@use "./global.scss";
+// global
+
+@import "./global/font.scss";
+@import "./global/normilize.scss";
+@import "./global/soft-reset.scss";
+@import "./global/variables.scss";
+@import "./global/utility.scss";
+
+// index
+
+@import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-nav.scss";
+
+@import "./blocks/promo.scss";
+@import "./blocks/main-title.scss";
+@import "./blocks/button.scss";
+
+// catalog
+
+
+
+// form

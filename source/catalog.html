@@ -8,182 +8,183 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <h1 class="visually-hidden">Каталог магазина правильного питания для котиков</h1>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <img class="page-header__logo-dog" src="images/svg/logo-mobile-1.svg" alt="Logo dog"
-      width="34" height="38">
-      <img class="page-header__logo-text logo-text" src="images/svg/logo-mobile-2.svg" alt="Logo text"
-      width="101" height="18">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="page-header__top">
+        <a href="index.html">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="images/svg/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg">
+            <img class="logo" src="images/svg/logo-mobile-1.svg" alt="Logo dog" width="34" height="38">
+          </picture>
+        </a>
+        <img class="page-header__logo-mobile" src="images/svg/logo-mobile-2.svg" alt="Logo text" 
+          width="101" height="18">
+        <button class="page-header__toggle page-header__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__items">
-              <a href="index.html" class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__items">
-              <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
-            </li>
-            <li class="main-nav__items">
-              <a href="form.html" class="main-nav__link">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a>Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
   <main class="page-main">
     <section class="main-catalog">
-      <div class="main-catalog__wrapper">
-        <h2 class="main-catalog__title">Каталог продукции</h2>
-        <ul class="main-catalog__list">
-          <li class="main-catalog__item product-card">
-            <img src="images/catalog-1.png" alt="Баночка кошачей еды с курицей, маленькая" 
-            class="product-card__image" width="68" height="86">
-            <div class="product-card__details">
-              <h3 class="product-card__title">Cat energy pro 500</h3>
-              <dl class="product-card__definition-list">
-                <dt class="product-card__definition-name">Масса</dt>
-                <dd class="product-card__definition-meaning">500 г</dd>
-                <dt class="product-card__definition-name">Вкус</dt>
-                <dd class="product-card__definition-meaning">Курица</dd>
-                <dt class="product-card__definition-name">Цена</dt>
-                <dd class="product-card__definition-meaning">700 Р.</dd>
-              </dl>
-            </div>
-            <button class="main-catalog__button button" type="button">
-              <p class="button__text">Заказать</p>
-            </button>
-          </li>
-          <li class="main-catalog__item product-card">
-            <img src="images/catalog-2.png" alt="Баночка кошачей еды с курицей, большая" 
-            class="product-card__image" width="84" height="101">
-            <div class="product-card__details">
-              <h3 class="product-card__title">Cat energy pro 1000</h3>
-              <dl class="product-card__definition-list">
-                <dt class="product-card__definition-name">Масса</dt>
-                <dd class="product-card__definition-meaning">1000 г</dd>
-                <dt class="product-card__definition-name">Вкус</dt>
-                <dd class="product-card__definition-meaning">Курица</dd>
-                <dt class="product-card__definition-name">Цена</dt>
-                <dd class="product-card__definition-meaning">1000 Р.</dd>
-              </dl>
-            </div>
-            <button class="main-catalog__button button" type="button">
-              <p class="button__text">Заказать</p>
-            </button>
-          </li>
-          <li class="main-catalog__item product-card">
-            <img src="images/catalog-3.png" alt="Баночка кошачей еды с рыбой, маленькая" 
-            class="product-card__image" width="68" height="78">
-            <div class="product-card__details">
-              <h3 class="product-card__title">Cat energy pro 500</h3>
-              <dl class="product-card__definition-list">
-                <dt class="product-card__definition-name">Масса</dt>
-                <dd class="product-card__definition-meaning">500 г</dd>
-                <dt class="product-card__definition-name">Вкус</dt>
-                <dd class="product-card__definition-meaning">Рыба</dd>
-                <dt class="product-card__definition-name">Цена</dt>
-                <dd class="product-card__definition-meaning">700 Р.</dd>
-              </dl>
-            </div>
-            <button class="main-catalog__button button" type="button">
-              <p class="button__text">Заказать</p>
-            </button>
-          </li>
-          <li class="main-catalog__item product-card">
-            <img src="images/catalog-4.png" alt="Баночка кошачей еды с рыбой, большая" 
-            class="product-card__image" width="84" height="101">
-            <div class="product-card__details">
-              <h3 class="product-card__title">Cat energy pro 1000</h3>
-              <dl class="product-card__definition-list">
-                <dt class="product-card__definition-name">Масса</dt>
-                <dd class="product-card__definition-meaning">1000 г</dd>
-                <dt class="product-card__definition-name">Вкус</dt>
-                <dd class="product-card__definition-meaning">Рыба</dd>
-                <dt class="product-card__definition-name">Цена</dt>
-                <dd class="product-card__definition-meaning">1000 Р.</dd>
-              </dl>
-            </div>
-            <button class="main-catalog__button button" type="button">
-              <p class="button__text">Заказать</p>
-            </button>
-          </li>
-          <li class="main-catalog__item product-card">
-            <img src="images/catalog-5.png" alt="Баночка кошачей еды с гречкой, маленькая" 
-            class="product-card__image" width="68" height="78">
-            <div class="product-card__details">
-              <h3 class="product-card__title">Cat energy slim 500</h3>
-              <dl class="product-card__definition-list">
-                <dt class="product-card__definition-name">Масса</dt>
-                <dd class="product-card__definition-meaning">500 г</dd>
-                <dt class="product-card__definition-name">Вкус</dt>
-                <dd class="product-card__definition-meaning">Гречка</dd>
-                <dt class="product-card__definition-name">Цена</dt>
-                <dd class="product-card__definition-meaning">400 Р.</dd>
-              </dl>
-            </div>
-            <button class="main-catalog__button button" type="button">
-              <p class="button__text">Заказать</p>
-            </button>
-          </li>
-          <li class="main-catalog__item product-card">
-            <img src="images/catalog-6.png" alt="Баночка кошачей еды с гречкой, большая" 
-            class="product-card__image" width="84" height="100">
-            <div class="product-card__details">
-              <h3 class="product-card__title">Cat energy slim 1000</h3>
-              <dl class="product-card__definition-list">
-                <dt class="product-card__definition-name">Масса</dt>
-                <dd class="product-card__definition-meaning">1000 г</dd>
-                <dt class="product-card__definition-name">Вкус</dt>
-                <dd class="product-card__definition-meaning">Гречка</dd>
-                <dt class="product-card__definition-name">Цена</dt>
-                <dd class="product-card__definition-meaning">700 Р.</dd>
-              </dl>
-            </div>
-            <button class="main-catalog__button button" type="button">
-              <p class="button__text">Заказать</p>
-            </button>
-          </li>
-          <li class="main-catalog__item product-card">
-            <img src="images/catalog-7.png" alt="Баночка кошачей еды с рисом, маленькая" 
-            class="product-card__image" width="72" height="84">
-            <div class="product-card__details">
-              <h3 class="product-card__title">Cat energy slim 500</h3>
-              <dl class="product-card__definition-list">
-                <dt class="product-card__definition-name">Масса</dt>
-                <dd class="product-card__definition-meaning">500 г</dd>
-                <dt class="product-card__definition-name">Вкус</dt>
-                <dd class="product-card__definition-meaning">Рис</dd>
-                <dt class="product-card__definition-name">Цена</dt>
-                <dd class="product-card__definition-meaning">500 Р.</dd>
-              </dl>
-            </div>
-            <button class="main-catalog__button button" type="button">
-              <p class="button__text">Заказать</p>
-            </button>
-          </li>
-          <li class="main-catalog__item main-catalog__item--show-more product-card">
-            <img src="images/svg/plus.svg" alt="Изображение большого плюса" 
-            class="product-card__image product-card__image--show-more">
-            <div class="product-card__details">
-              <h3 class="product-card__title">Показать еще 100500 товаров</h3>
-              <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
-            </div>
-            <button class="main-catalog__button button button--show-more" type="button">
-              <p class="button__text button__text--show-more">Показать все</p>
-            </button>
-          </li>
-        </ul>
-      </div>
+      <h1 class="main-catalog__title main-title">Каталог продукции</h1>
+      <ul class="main-catalog__list">
+        <li class="main-catalog__item product-card">
+          <img src="images/catalog-1.png" alt="Баночка кошачей еды с курицей, маленькая" 
+          class="product-card__image" width="68" height="86">
+          <div class="product-card__details">
+            <h3 class="product-card__title">Cat energy pro 500</h3>
+            <dl class="product-card__definition-list">
+              <dt class="product-card__definition-name">Масса</dt>
+              <dd class="product-card__definition-meaning">500 г</dd>
+              <dt class="product-card__definition-name">Вкус</dt>
+              <dd class="product-card__definition-meaning">Курица</dd>
+              <dt class="product-card__definition-name">Цена</dt>
+              <dd class="product-card__definition-meaning">700 Р.</dd>
+            </dl>
+          </div>
+          <button class="main-catalog__button button" type="button">
+            <p>Заказать</p>
+          </button>
+        </li>
+        <li class="main-catalog__item product-card">
+          <img src="images/catalog-2.png" alt="Баночка кошачей еды с курицей, большая" 
+          class="product-card__image" width="84" height="101">
+          <div class="product-card__details">
+            <h3 class="product-card__title">Cat energy pro 1000</h3>
+            <dl class="product-card__definition-list">
+              <dt class="product-card__definition-name">Масса</dt>
+              <dd class="product-card__definition-meaning">1000 г</dd>
+              <dt class="product-card__definition-name">Вкус</dt>
+              <dd class="product-card__definition-meaning">Курица</dd>
+              <dt class="product-card__definition-name">Цена</dt>
+              <dd class="product-card__definition-meaning">1000 Р.</dd>
+            </dl>
+          </div>
+          <button class="main-catalog__button button" type="button">
+            <p>Заказать</p>
+          </button>
+        </li>
+        <li class="main-catalog__item product-card">
+          <img src="images/catalog-3.png" alt="Баночка кошачей еды с рыбой, маленькая" 
+          class="product-card__image" width="68" height="78">
+          <div class="product-card__details">
+            <h3 class="product-card__title">Cat energy pro 500</h3>
+            <dl class="product-card__definition-list">
+              <dt class="product-card__definition-name">Масса</dt>
+              <dd class="product-card__definition-meaning">500 г</dd>
+              <dt class="product-card__definition-name">Вкус</dt>
+              <dd class="product-card__definition-meaning">Рыба</dd>
+              <dt class="product-card__definition-name">Цена</dt>
+              <dd class="product-card__definition-meaning">700 Р.</dd>
+            </dl>
+          </div>
+          <button class="main-catalog__button button" type="button">
+            <p>Заказать</p>
+          </button>
+        </li>
+        <li class="main-catalog__item product-card">
+          <img src="images/catalog-4.png" alt="Баночка кошачей еды с рыбой, большая" 
+          class="product-card__image" width="84" height="101">
+          <div class="product-card__details">
+            <h3 class="product-card__title">Cat energy pro 1000</h3>
+            <dl class="product-card__definition-list">
+              <dt class="product-card__definition-name">Масса</dt>
+              <dd class="product-card__definition-meaning">1000 г</dd>
+              <dt class="product-card__definition-name">Вкус</dt>
+              <dd class="product-card__definition-meaning">Рыба</dd>
+              <dt class="product-card__definition-name">Цена</dt>
+              <dd class="product-card__definition-meaning">1000 Р.</dd>
+            </dl>
+          </div>
+          <button class="main-catalog__button button" type="button">
+            <p>Заказать</p>
+          </button>
+        </li>
+        <li class="main-catalog__item product-card">
+          <img src="images/catalog-5.png" alt="Баночка кошачей еды с гречкой, маленькая" 
+          class="product-card__image" width="68" height="78">
+          <div class="product-card__details">
+            <h3 class="product-card__title">Cat energy slim 500</h3>
+            <dl class="product-card__definition-list">
+              <dt class="product-card__definition-name">Масса</dt>
+              <dd class="product-card__definition-meaning">500 г</dd>
+              <dt class="product-card__definition-name">Вкус</dt>
+              <dd class="product-card__definition-meaning">Гречка</dd>
+              <dt class="product-card__definition-name">Цена</dt>
+              <dd class="product-card__definition-meaning">400 Р.</dd>
+            </dl>
+          </div>
+          <button class="main-catalog__button button" type="button">
+            <p>Заказать</p>
+          </button>
+        </li>
+        <li class="main-catalog__item product-card">
+          <img src="images/catalog-6.png" alt="Баночка кошачей еды с гречкой, большая" 
+          class="product-card__image" width="84" height="100">
+          <div class="product-card__details">
+            <h3 class="product-card__title">Cat energy slim 1000</h3>
+            <dl class="product-card__definition-list">
+              <dt class="product-card__definition-name">Масса</dt>
+              <dd class="product-card__definition-meaning">1000 г</dd>
+              <dt class="product-card__definition-name">Вкус</dt>
+              <dd class="product-card__definition-meaning">Гречка</dd>
+              <dt class="product-card__definition-name">Цена</dt>
+              <dd class="product-card__definition-meaning">700 Р.</dd>
+            </dl>
+          </div>
+          <button class="main-catalog__button button" type="button">
+            <p>Заказать</p>
+          </button>
+        </li>
+        <li class="main-catalog__item product-card">
+          <img src="images/catalog-7.png" alt="Баночка кошачей еды с рисом, маленькая" 
+          class="product-card__image" width="72" height="84">
+          <div class="product-card__details">
+            <h3 class="product-card__title">Cat energy slim 500</h3>
+            <dl class="product-card__definition-list">
+              <dt class="product-card__definition-name">Масса</dt>
+              <dd class="product-card__definition-meaning">500 г</dd>
+              <dt class="product-card__definition-name">Вкус</dt>
+              <dd class="product-card__definition-meaning">Рис</dd>
+              <dt class="product-card__definition-name">Цена</dt>
+              <dd class="product-card__definition-meaning">500 Р.</dd>
+            </dl>
+          </div>
+          <button class="main-catalog__button button" type="button">
+            <p>Заказать</p>
+          </button>
+        </li>
+        <li class="main-catalog__item main-catalog__item--show-more product-card">
+          <img src="images/svg/plus.svg" alt="Изображение большого плюса" 
+          class="product-card__image product-card__image--show-more">
+          <div class="product-card__details">
+            <h3 class="product-card__title">Показать еще 100500 товаров</h3>
+            <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
+          </div>
+          <button class="main-catalog__button button button--show-more" type="button">
+            <p class="button__text button__text--show-more">Показать все</p>
+          </button>
+        </li>
+      </ul>
     </section>
     <section class="addition-catalog">
-      <div class="addition-catalog__wrapper">
-        <h2 class="addition-catalog__title">Дополнительные товары</h2>
-        <ul class="addition-catalog__list">
+      <h2 class="addition-catalog__title">Дополнительные товары</h2>
+      <ul class="addition-catalog__list">
           <li class="addition-catalog__item addition-product-card">
             <h3 class="addition-product-card__title">Сахарозаменитель</h3>
             <dl class="addition-product-card__definition-list">
@@ -191,7 +192,7 @@
               <dd class="addition-product-card__definition-meaning">200 Р.</dd>
             </dl>
             <button class="addition-product-card__button button">
-              <p class="button__text">Заказать</p>
+              <p>Заказать</p>
             </button>
           </li>
           <li class="addition-catalog__item addition-product-card">
@@ -201,7 +202,7 @@
               <dd class="addition-product-card__definition-meaning">50 Р.</dd>
             </dl>
             <button class="addition-product-card__button button">
-              <p class="button__text">Заказать</p>
+              <p>Заказать</p>
             </button>
           </li>
           <li class="addition-catalog__item addition-product-card">
@@ -211,7 +212,7 @@
               <dd class="addition-product-card__definition-meaning">100 Р.</dd>
             </dl>
             <button class="addition-product-card__button button">
-              <p class="button__text">Заказать</p>
+              <p>Заказать</p>
             </button>
           </li>
           <li class="addition-catalog__item addition-product-card">
@@ -221,17 +222,14 @@
               <dd class="addition-product-card__definition-meaning">300 Р.</dd>
             </dl>
             <button class="addition-product-card__button button">
-              <p class="button__text">Заказать</p>
+              <p>Заказать</p>
             </button>
           </li>
-        </ul>
-      </div>
+      </ul>
     </section>
     <section class="gift">
-      <div class="gift__wrapper">
-        <div class="gift__icon"></div>
-        <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
-      </div>
+      <div class="gift__icon"></div>
+      <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
     </section>
   </main>
   <footer class="page-footer">
@@ -249,29 +247,49 @@
       width="128" height="24">
       <ul class="page-footer__social-media-list social-media-list">
         <li class="social-media-list__item">
-          <a href="" class="social-media-list__link">
+          <a>
             <img src="images/svg/icon_vkontakte.svg" alt="Вконтакте" class="social-media-list__image"
             width="23" height="16">
           </a>
         </li>
         <li class="social-media-list__item">
-          <a href="" class="social-media-list__link">
+          <a>
             <img src="images/svg/icon_instagram.svg" alt="Инстаграм" class="social-media-list__image"
             width="16" height="16">
           </a>
         </li>
         <li class="social-media-list__item">
-          <a href="" class="social-media-list__link">
+          <a>
             <img src="images/svg/icon_facebook.svg" alt="Фейсбук" class="social-media-list__image"
             width="22" height="22">
           </a>
         </li>
       </ul>
       <div class="page-footer__maket-author maket-author">
-        <p class="maket-author__logo-text">HTML Academy</p>
+        <p class="maket-author__logo--text">HTML Academy</p>
         <img src="images/svg/html-academy-logo.svg" alt="Логотив HTML Academy" width="27" height="34">
       </div>
     </div>
   </footer>
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.page-header__toggle');
+    
+    navToggle.addEventListener("click", toggleBehavior)
+
+    function toggleBehavior() {
+      if (navMain.classList.contains('main-nav--closed') 
+      && navToggle.classList.contains('page-header__toggle--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navToggle.classList.remove('page-header__toggle--closed');
+        navToggle.classList.add('page-header__toggle--open');
+      }
+      else {
+        navMain.classList.add('main-nav--closed');
+        navToggle.classList.add('page-header__toggle--closed');
+        navToggle.classList.remove('page-header__toggle--open');
+      }
+    }
+  </script>
 </body>
 </html>

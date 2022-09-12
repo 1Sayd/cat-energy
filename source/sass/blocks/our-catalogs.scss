@@ -4,7 +4,10 @@
 
 .our-catalogs__wrapper {
   padding: 22px 20px 27px 20px;
-  
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 30px 27px 30px;
+  }
 }
 
 .our-catalogs__list {
@@ -15,6 +18,6 @@
 
 .our-catalogs__item {
   &:nth-child(1) {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }

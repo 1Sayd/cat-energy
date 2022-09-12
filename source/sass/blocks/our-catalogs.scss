@@ -1,0 +1,20 @@
+.our-catalogs {
+  
+}
+
+.our-catalogs__wrapper {
+  padding: 22px 20px 27px 20px;
+  
+}
+
+.our-catalogs__list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.our-catalogs__item {
+  &:nth-child(1) {
+    margin-bottom: 20px;
+  }
+}

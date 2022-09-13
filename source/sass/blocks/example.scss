@@ -1,0 +1,61 @@
+.example__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.example__wrapper-left {
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.example__modules-and-cost-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.example__cost-definition-list {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.example__cost-definition-meaning {
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}
+
+.example__show {
+  text-align: center;
+}
+
+.example__before {
+
+  @media (min-width: $tablet-width) {
+    width: 677px;
+    height: 520px;
+  }
+}
+
+.example__after {
+  display: none;
+}
+
+.example__slider-wrapper {
+  text-align: center;
+}

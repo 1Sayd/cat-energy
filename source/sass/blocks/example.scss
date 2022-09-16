@@ -1,9 +1,21 @@
+.example {
+  background: $basic_grey;
+}
+
 .example__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 31px 20px 21px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    // margin-top: -600px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -14,29 +26,106 @@
   }
 }
 
+.example__title {
+  margin: 0px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 100%;
+  }
+}
+
+.example__text {
+  margin-top: 33px;
+  font-family: 'Arial';
+  color: $special_dark-grey;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 146px;
+  }
+}
+
 .example__modules-and-cost-container {
+  padding-top: 25px;
+  padding-bottom: 42px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-bottom: 59px;
+
     flex-direction: row;
     justify-content: space-between;
+    gap: 167px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    padding-bottom: 75px;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 47px;
+  }
+}
+
+.example__module-definition-list {
+  margin-top: 0px;
+  display: flex;
+  gap: 31px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    gap: 42px;
+    // width: 366px;
+    // width: calc(100% - 174px);
+    width: calc(100% - 341px);
   }
 }
 
 .example__cost-definition-list {
   display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.example__cost-definition-name {
+  
+  @media (min-width: $tablet-width) {
+    
   }
 }
 
 .example__cost-definition-meaning {
-
+  margin-inline-start: 4px;
+  
   @media (min-width: $tablet-width) {
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -45,6 +134,7 @@
 }
 
 .example__before {
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 677px;
@@ -56,6 +146,10 @@
   display: none;
 }
 
-.example__slider-wrapper {
-  text-align: center;
+.example__slider {
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
 }

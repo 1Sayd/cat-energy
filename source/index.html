@@ -122,15 +122,17 @@
             Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих 
             привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="example__modules-and-cost-container">
-            <ul class="example__module-list">
-              <li class="example__module-item module">
-                <h3 class="module__title">5 кг</h3>
-                <p class="module__text">Снижение веса</p>
-              </li>
-              <li class="example__module-item module">
-                <h3 class="module__title">60 Дней</h3>
-                <p class="module__text">Затрачено времени</p>
-              </li>
+
+            <dl class="example__module-definition-list">
+              <div class="example__module-definition-item module">
+                <dt class="module__definition-name">5 кг</dt>
+                <dd class="module__definition-meaning">Снижение <br> веса</dd>
+              </div>
+              <div class="module">
+                <dt class="module__definition-name">60 Дней</dt>
+                <dd class="module__definition-meaning">Затрачено <br> времени</dd>
+              </div>
+            </dl>
             </ul>
             <dl class="example__cost-definition-list">
               <dt class="example__cost-definition-name">Затраты на питание:</dt>
@@ -140,21 +142,22 @@
         </div>
         <div class="example__show">
           <picture>
-            <source media="(min-width: 768px)" srcset="images/before.png 1x,
+            <source media="(min-width: 500px)" srcset="images/before.png 1x,
             images/before@2x.png 2x">
             <img class="example__before" src="images/before-mobile.png"
             srcset="images/before-mobile@2x.png 2x" alt="До использования продукта" width="311" height="232">
           </picture>
           <picture>
-            <source media="(min-width: 768px)" srcset="images/after-mobile.png 1x,
+            <source media="(min-width: 500px)" srcset="images/after-mobile.png 1x,
             images/after-mobile@2x.png 2x">
             <img class="example__after" src="images/after-mobile.png"
             srcset="images/after-mobile@2x.png 2x" alt="После использования продукта" width="251" height="240">
           </picture>
-          <div class="example__slider-wrapper">
-            <p class="example__slider-before">Было</p>
-            <div class="slider"></div>
-            <p class="example__slider-before">Стало</p>
+          <div class="example__slider slider">
+            <span class="slider__before">Было</span>
+            <div class="slider__input slider__input--mobile"></div>
+            <input class="slider__input slider__input--tablet" type="range">
+            <span class="slider__after">Стало</span>
           </div>
         </div>
       </div>

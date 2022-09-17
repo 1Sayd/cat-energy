@@ -29,6 +29,10 @@
   border-radius: 6px;
   display: inline-block;
 
+  @media (min-width: $tablet-width) {
+    background: #DCDCDC;
+  }
+
   &::-webkit-slider-thumb {    
     -webkit-appearance: none;
     height: 34px;

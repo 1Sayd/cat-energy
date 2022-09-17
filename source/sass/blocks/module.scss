@@ -46,7 +46,7 @@
 
 .module__definition-meaning {
   z-index: 1;
-  background-color: $basic_grey;
+  background-color: $basic_grey-2;
   // position: absolute;
   // z-index: 1;
   margin: 0px auto;
@@ -71,7 +71,10 @@
     & br {
       display: none;
     }
-    // top: 63px;
-    // left: 10px;
+    background-color: white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic_grey;
   }
 }

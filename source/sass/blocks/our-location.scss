@@ -1,21 +1,3 @@
-.our-location {
-  position: relative;
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      position: absolute;
-      content: '';
-      z-index: -1;
-  
-      //make background full size of screen
-      box-shadow: 0 0 0 100vmax $basic_grey;
-      clip-path: inset(0 -100vmax); 
-  
-      height: 100%;
-    }
-  }
-}
-
 .our-location__contacts {
   padding-left: 20px;
   padding-right: 20px;
@@ -43,7 +25,7 @@
 
     position: absolute;
     top: 78px;
-    left: 78px;
+    left: 40px;
   }
 }
 

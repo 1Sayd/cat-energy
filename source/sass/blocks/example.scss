@@ -1,5 +1,35 @@
 .example {
-  background: $basic_grey;
+  position: relative;
+  // background: $basic_grey;
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+
+    //make background full size of screen
+    box-shadow: 0 0 0 100vmax $basic_grey-2;
+    clip-path: inset(0 -100vmax); 
+
+    // background: $basic_grey;
+    // width: 100%;
+    height: 100%;
+
+    @media (min-width: $tablet-width) {
+      top: 630px;
+      height: 442px;
+    }
+
+    //fix background shifting on top
+    @media (min-width: 875px) {
+      top: 606px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      box-shadow: 0 0 0 100vmax $basic_grey;
+      top: 190px;
+      height: 442px;
+    }
+  }
 }
 
 .example__wrapper {
@@ -16,6 +46,7 @@
     display: flex;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 0px;
   }
 }
 
@@ -32,6 +63,10 @@
 
   @media (min-width: $tablet-width) {
     line-height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
   }
 }
 
@@ -50,6 +85,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 146px;
+    width: 436px;
   }
 }
 
@@ -94,6 +130,7 @@
 }
 
 .example__cost-definition-list {
+  margin: 0px;
   display: flex;
   font-size: 14px;
   line-height: 20px;

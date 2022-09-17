@@ -41,7 +41,7 @@
   </header>
   <main class="page-main">
     <section class="main-catalog">
-      <h1 class="main-catalog__title main-title">Каталог продукции</h1>
+      <h1 class="main-catalog__title section-title">Каталог продукции</h1>
       <ul class="main-catalog__list">
         <li class="main-catalog__item product-card">
           <img src="images/catalog-1.png" alt="Баночка кошачей еды с курицей, маленькая" 
@@ -233,43 +233,48 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper page-footer__wrapper--our-location our-location">
+    <section class="our-location">
       <div class="our-location__contacts">
-        <p class="our-location__pseudo-title">приглашаем к сотрудничеству дилеров!</p>
-        <p class="our-location__text">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+        <p class="our-location__pseudo-title">приглашаем <br> к сотрудничеству <br> дилеров!</p>
+        <p class="our-location__text">ул. Большая <br> Конюшенная, д. 19/8 <br> <br> Санкт-Петербург</p>
       </div>
-      <div class="our-locatoin__content">
-        <img src="images/location.png" alt="Где мы" width="320" height="362">
-      </div>
-    </div>
-    <div class="page-footer__wrapper page-footer__wrapper--our-contacts">
-      <img class="page-footer__logo logo-text" src="images/svg/logo-mobile-2.svg" alt="Logo text"
+      <picture>
+        <source media="(min-width: 1280px)" srcset="images/location_desktop.png 1x,
+        images/location_desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="images/location_tablet.png 1x,
+        images/location_tablet@2x.png 2x">
+        <img class="our-locatoin__content" src="images/location_mobile.png"
+        srcset="images/location_mobile@2x 2x" alt="Где мы" width="320" height="362">
+      </picture>
+    </section>
+    <section class="our-contacts">
+      <img class="our-contacts__logo" src="images/svg/logo-mobile-2.svg" alt="Logo text"
       width="128" height="24">
-      <ul class="page-footer__social-media-list social-media-list">
-        <li class="social-media-list__item">
+      <ul class="our-contacts__social-media social-media">
+        <li class="social-media__item">
           <a>
-            <img src="images/svg/icon_vkontakte.svg" alt="Вконтакте" class="social-media-list__image"
+            <img src="images/svg/icon_vkontakte.svg" alt="Вконтакте" class="social-media__image"
             width="23" height="16">
           </a>
         </li>
-        <li class="social-media-list__item">
+        <li class="social-media__item">
           <a>
-            <img src="images/svg/icon_instagram.svg" alt="Инстаграм" class="social-media-list__image"
+            <img src="images/svg/icon_instagram.svg" alt="Инстаграм" class="social-media__image"
             width="16" height="16">
           </a>
         </li>
-        <li class="social-media-list__item">
+        <li class="social-media__item">
           <a>
-            <img src="images/svg/icon_facebook.svg" alt="Фейсбук" class="social-media-list__image"
+            <img src="images/svg/icon_facebook.svg" alt="Фейсбук" class="social-media__image"
             width="22" height="22">
           </a>
         </li>
       </ul>
-      <div class="page-footer__maket-author maket-author">
-        <p class="maket-author__logo--text">HTML Academy</p>
+      <div class="our-contacts__maket-author maket-author">
+        <p class="maket-author__name">HTML Academy</p>
         <img src="images/svg/html-academy-logo.svg" alt="Логотив HTML Academy" width="27" height="34">
       </div>
-    </div>
+    </section>
   </footer>
   <script>
     let navMain = document.querySelector('.main-nav');

@@ -3,6 +3,7 @@
   padding-bottom: 14px;
 
   position: relative;
+
   &::before {
     content: '';
     width: 100%;
@@ -23,6 +24,11 @@
 .product-card__content-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  &--show-more {
+    display: block;
+    text-align: center;
+  }
 }
 
 .product-card__details {
@@ -37,6 +43,20 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 76px;
+
+  &--show-more {
+    margin-top: 22px;
+    margin-bottom: 8px;
+    width: auto;
+  }
+}
+
+.product-card__text {
+  margin-top: 0px;
+  font-family: 'Arial';
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
 }
 
 .product-card__definition-list {

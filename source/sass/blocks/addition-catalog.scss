@@ -1,0 +1,30 @@
+.addition-catalog__title {
+  margin-top: 25px;
+  margin-bottom: 36px;
+  padding-left: 19px;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    width: calc(100% - 270px);
+    height: 2px;
+    background-color: $basic_green;
+
+    position: absolute;
+    top: calc(50% + 3px);
+    right: 0px;
+  }
+}
+
+.addition-catalog__list {
+  margin: 0px;
+  padding: 0px 20px 0px 19px;
+  list-style-type: none;
+
+  border-bottom: 1px solid $special_grey;
+}

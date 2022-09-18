@@ -19,9 +19,16 @@
   align-items: center;
   padding: 12px 23px 15px 20px;
 
+  border-bottom: 1px solid $border-color;
+
+  &--index {
+    border: none;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     padding: 0px;
+    border: none;
   }
 }
 

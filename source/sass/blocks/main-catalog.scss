@@ -1,0 +1,21 @@
+.main-catalog__wrapper {
+  padding: 27px 20px 0px 20px;
+}
+
+.main-catalog__title {
+  padding-bottom: 41px;
+  margin: 0px;
+}
+
+.main-catalog__list {
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

@@ -1,14 +1,24 @@
 .page-header__wrapper {
 
   @media (min-width: $tablet-width) {
-    padding: 24px 30px 64px 30px;
+    padding: 24px 30px 0px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 40px 111px 40px;
+    padding: 53px 40px 0px 40px;
+  }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      padding: 24px 30px 64px 30px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding: 53px 40px 111px 40px;
+    }
   }
 }
 

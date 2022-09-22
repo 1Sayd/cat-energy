@@ -8,6 +8,10 @@
   justify-items: center;
   align-items: center;
 
+  &--index {
+    background-color: white;
+  }
+
   @media (min-width: 385px) {
     column-gap: 20px;
   }
@@ -37,6 +41,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 21px;
+    margin-top: 65px;
+    margin-bottom: 61px;
   }
 }
 

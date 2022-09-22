@@ -1,17 +1,15 @@
 .page-footer {
   position: relative;
 
-  @media (min-width: $desktop-width) {
-    &::before {
-      position: absolute;
-      content: '';
-      z-index: -1;
-  
-      //make background full size of screen
-      box-shadow: 0 0 0 100vmax $basic_grey;
-      clip-path: inset(0 -100vmax); 
-  
-      height: 100%;
-    }
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+
+    //make background full size of screen
+    box-shadow: 0 0 0 100vmax $basic_grey;
+    clip-path: inset(0 -100vmax); 
+
+    height: 100%;
   }
 }

@@ -63,19 +63,19 @@
     background-position: 128px 40px;
 
     &--one {
-      background-image: url(../../images/svg/one.svg);
+      background-image: url(../images/svg/one.svg);
     }
 
     &--two {
-      background-image: url(../../images/svg/two.svg);
+      background-image: url(../images/svg/two.svg);
     }
 
     &--three {
-      background-image: url(../../images/svg/three.svg);
+      background-image: url(../images/svg/three.svg);
     }
 
     &--four {
-      background-image: url(../../images/svg/four.svg);
+      background-image: url(../images/svg/four.svg);
     }
   }
 
@@ -114,19 +114,19 @@
   background-position: center;
 
   &--leaf {
-    background-image: url('../../images/svg/icon_leaf.svg');
+    background-image: url('../images/svg/icon_leaf.svg');
   }
 
   &--tub {
-    background-image: url('../../images/svg/icon_tub.svg');
+    background-image: url('../images/svg/icon_tub.svg');
   }
 
   &--eat {
-    background-image: url('../../images/svg/icon_eat.svg');
+    background-image: url('../images/svg/icon_eat.svg');
   }
 
   &--alarm {
-    background-image: url('../../images/svg/icon_alarm.svg');
+    background-image: url('../images/svg/icon_alarm.svg');
   }
 
   @media (min-width: $tablet-width) {

@@ -14,4 +14,17 @@
   &:active p {
     opacity: 0.3;
   }
+
+  &--show-more {
+    background-color: $basic_grey;
+    color: $special_dark-grey;
+
+    &:hover {
+      background-color: $special_grey-2;
+    }
+
+    &:active p {
+      opacity: 0.3;
+    }
+  }
 }

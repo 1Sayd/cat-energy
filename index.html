@@ -9,8 +9,8 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <div class="page-header__top">
+    <div class="page-header__wrapper page-header__wrapper--index">
+      <div class="page-header__top page-header__top--index">
         <a>
           <picture>
             <source media="(min-width: 1280px)" srcset="images/svg/logo-desktop.svg">
@@ -52,9 +52,11 @@
           <img class="promo__image" src="images/index-can-mobile.png" 
           srcset="images/index-can-mobile@2x.png 2x" alt="Стакан корма с курицей" width="280" height="270">
         </picture>
-        <button class="promo__button button">
-          <p>подобрать программу</p>
-        </button>
+        <a href="form.html">
+          <button class="promo__button button">
+            <p>Подобрать программу</p>
+          </button>
+        </a>
       </div>
     </section>
     <section class="our-catalogs">
@@ -67,7 +69,7 @@
             <p class="our-catalogs-card__text">Ваш кот весит больше собаки и почти утратил способность лазить 
               по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <div class="our-catalogs-card__button">
-              <a href="catalog.html">
+              <a href="catalog.html#slim">
                 <p>Каталог slim</p>
               </a>
             </div>
@@ -79,7 +81,7 @@
             <p class="our-catalogs-card__text">Заработать авторитет среди дворовых котов <br> и даже собак? Серия 
               Cat Energy Pro поможет вашему коту нарастить необходимые <br> мышцы!</p>
             <div class="our-catalogs-card__button">
-              <a href="catalog.html">
+              <a href="catalog.html#pro">
                 <p>Каталог pro</p>
               </a>
             </div>
@@ -165,7 +167,7 @@
   </main>
   <footer class="page-footer">
     <section class="our-location">
-      <div class="our-location__contacts">
+      <div class="our-location__contacts our-location__contacts--index">
         <p class="our-location__pseudo-title">приглашаем <br> к сотрудничеству <br> дилеров!</p>
         <p class="our-location__text">ул. Большая <br> Конюшенная, д. 19/8 <br> <br> Санкт-Петербург</p>
       </div>

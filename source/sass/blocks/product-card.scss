@@ -102,6 +102,15 @@
   }
 }
 
+.product-card__slim-anchor {
+  position: absolute;
+  top: -20px;
+
+  @media (min-width: $tablet-width) {
+    top: -200px;
+  }
+}
+
 .product-card__details {
   display: flex;
   flex-direction: column;

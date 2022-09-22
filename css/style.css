@@ -2058,7 +2058,7 @@ a {
     justify-content: space-around;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .gift__wrapper {
     background-image: url("../images/gift-photo-desktop.jpg");
     width: 245px;
